@@ -4,7 +4,9 @@
   "description": "simplest redux + react example",
   "main": "index.js",
   "scripts": {
-    "start": "watchify --extension=js -o bundle.js index.js & python -m SimpleHTTPServer"
+    "watch-js": "watchify --extension=js -o bundle.js index.js",
+    "build-js": "browserify index.js -o bundle.js",
+    "start": "python -m SimpleHTTPServer"
   },
   "repository": {
     "type": "git",
